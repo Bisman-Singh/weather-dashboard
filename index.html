@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <h1>&#9925; Weather Dashboard</h1>
+            <div class="search-bar">
+                <input type="text" id="cityInput" placeholder="Search city..." autocomplete="off">
+                <button id="searchBtn">Search</button>
+                <button id="locationBtn" title="Use my location">&#128205;</button>
+            </div>
+        </header>
+
+        <main class="dashboard" id="dashboard">
+            <div class="current-weather" id="currentWeather">
+                <div class="weather-main">
+                    <div class="weather-icon" id="weatherIcon">&#127780;</div>
+                    <div class="temp-display">
+                        <span class="temperature" id="temperature">--</span>
+                        <span class="unit-toggle" id="unitToggle">°C | °F</span>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <h2 id="cityName">Search for a city</h2>
+                    <p id="description">--</p>
+                    <div class="detail-grid">
+                        <div class="detail-item">
+                            <span class="detail-label">Feels Like</span>
+                            <span class="detail-value" id="feelsLike">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Humidity</span>
+                            <span class="detail-value" id="humidity">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Wind</span>
+                            <span class="detail-value" id="wind">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Pressure</span>
+                            <span class="detail-value" id="pressure">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Visibility</span>
+                            <span class="detail-value" id="visibility">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">UV Index</span>
+                            <span class="detail-value" id="uvIndex">--</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-section">
+                <h3>5-Day Forecast</h3>
+                <div class="forecast-grid" id="forecastGrid"></div>
+            </div>
+
+            <div class="recent-section">
+                <h3>Recent Searches</h3>
+                <div class="recent-list" id="recentList"></div>
+            </div>
+        </main>
+
+        <div class="error-msg" id="errorMsg"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
