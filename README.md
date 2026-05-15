@@ -18,3 +18,5 @@ A sleek weather dashboard that fetches real-time weather data and displays a 5-d
 3. Open `index.html` in a browser
 
 Works in demo mode without an API key.
+
+<sub><sup>Originally developed and tested locally during learning. Later organized and pushed to GitHub for portfolio visibility.</sup></sub>
